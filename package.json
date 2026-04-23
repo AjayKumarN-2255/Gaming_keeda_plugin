@@ -1,0 +1,21 @@
+{
+  "name": "igamingkeeda-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@wordpress/scripts": "^32.0.0",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.10",
+    "postcss-loader": "^8.0.0",
+    "tailwindcss": "^3.4.19"
+  }
+}

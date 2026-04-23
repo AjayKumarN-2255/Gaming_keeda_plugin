@@ -1,0 +1,85 @@
+{
+    "basic": {
+        "player_name": "Virat Kohli",
+            "country": "India",
+                "player_type": "Batsman",
+                    "profile_image_url": "https://example.com/virat.jpg"
+    },
+
+    "profile": {
+        "date_of_birth": "1988-11-05",
+            "age": "36",
+                "height_cm": "175",
+                    "batting_style": "Right-hand bat",
+                        "bowling_style": "Right-arm medium",
+                            "jersey_number": "18",
+                                "role": "Top order batter",
+                                    "debut_date": "2008-08-18",
+                                        "retirement_date": "",
+                                            "father_name": "Prem Kohli",
+                                                "mother_name": "Saroj Kohli",
+                                                    "teams": ["India", "RCB"],
+                                                        "social_media": [
+                                                            "https://instagram.com/virat.kohli",
+                                                            "https://twitter.com/imVkohli"
+                                                        ],
+                                                            "images": [
+                                                                "https://example.com/v1.jpg",
+                                                                "https://example.com/v2.jpg"
+                                                            ]
+    },
+
+    "batting": [
+        {
+            "format": "ODI",
+            "matches": 300,
+            "innings": 288,
+            "not_outs": 44,
+            "runs": 13848,
+            "highest_score": 183,
+            "average": 57.32,
+            "balls_faced": 14900,
+            "strike_rate": 93.25
+        },
+        {
+            "format": "T20",
+            "matches": 115,
+            "innings": 107,
+            "not_outs": 31,
+            "runs": 4008,
+            "highest_score": 122,
+            "average": 52.10,
+            "balls_faced": 2900,
+            "strike_rate": 137.90
+        }
+    ],
+
+        "bowling": [
+            {
+                "format": "ODI",
+                "matches": 300,
+                "innings": 48,
+                "balls": 641,
+                "runs": 665,
+                "wickets": 5,
+                "best_bowling_innings": "1/13",
+                "best_bowling_match": "1/13",
+                "average": 133.0,
+                "economy_rate": 6.22,
+                "strike_rate": 128.2
+            }
+        ],
+
+            "contracts": [
+                {
+                    "year": 2024,
+                    "team": "RCB",
+                    "salary": 2500000
+                },
+                {
+                    "year": 2023,
+                    "team": "India",
+                    "salary": 3000000
+                }
+            ]
+}
