@@ -31,6 +31,17 @@ function Basic({ state, dispatch }) {
             placeholder="Enter player name"
           />
         </div>
+        {/* Title */}
+        <div>
+          <label className="igk-text-sm igk-font-medium">Title</label>
+          <input
+            type="text"
+            value={basic.title}
+            onChange={(e) => handleChange("title", e.target.value)}
+            className="igk-w-full igk-p-2 igk-border igk-rounded"
+            placeholder="Enter title"
+          />
+        </div>
 
         {/* Country */}
         <div>

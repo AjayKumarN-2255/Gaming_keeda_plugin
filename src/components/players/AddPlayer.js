@@ -1,5 +1,6 @@
 import React, { useReducer, useState } from "react";
 import { reducer, initialState } from "../../utils/reducer.js";
+import { addPlayer } from "../../utils/helper.js";
 import Basic from "./comp/Basic.js";
 import Profile from "./comp/Profile.js";
 import Batting from "./comp/Batting.js";
@@ -32,17 +33,15 @@ function AddPlayer() {
         }
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-
-        console.log("SUBMIT DATA:", state);
-
-        // Example API call
-        // fetch("/wp-json/player/create", {
-        //   method: "POST",
-        //   headers: { "Content-Type": "application/json" },
-        //   body: JSON.stringify(state)
-        // });
+        try {
+            const res = await addPlayer(state);
+            console.log("Player created:", res);
+            dispatch({ type: "RESET" });
+        } catch (err) {
+            console.error("Error creating player:", err);
+        }
     };
 
     return (

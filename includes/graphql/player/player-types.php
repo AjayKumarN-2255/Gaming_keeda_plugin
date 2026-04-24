@@ -5,6 +5,7 @@ add_action('graphql_register_types', function () {
     register_graphql_object_type('PlayerBasic', [
         'fields' => [
             'player_name' => ['type' => 'String'],
+            'title' => ['type' => 'String'],
             'country' => ['type' => 'String'],
             'player_type' => ['type' => 'String'],
             'profile_image_url' => ['type' => 'String'],
@@ -24,9 +25,9 @@ add_action('graphql_register_types', function () {
             'retirement_date' => ['type' => 'String'],
             'father_name' => ['type' => 'String'],
             'mother_name' => ['type' => 'String'],
-            'teams' => ['type' => ['list_of' => 'String']],
-            'social_media' => ['type' => ['list_of' => 'String']],
-            'images' => ['type' => ['list_of' => 'String']],
+            'teams' => ['type' => 'String'],
+            'social_media' => ['type' => 'String'],
+            'images' => ['type' => 'String'],
         ]
     ]);
 
@@ -68,14 +69,10 @@ add_action('graphql_register_types', function () {
         ]
     ]);
 
+    // IMPORTANT: Keep Player fields defined (structure only)
     register_graphql_object_type('Player', [
         'fields' => [
             'id' => ['type' => 'ID'],
-            'basic' => ['type' => 'PlayerBasic'],
-            'profile' => ['type' => 'PlayerProfile'],
-            'batting' => ['type' => ['list_of' => 'BattingStat']],
-            'bowling' => ['type' => ['list_of' => 'BowlingStat']],
-            'contracts' => ['type' => ['list_of' => 'Contract']],
         ]
     ]);
 });

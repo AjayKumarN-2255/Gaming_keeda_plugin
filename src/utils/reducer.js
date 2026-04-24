@@ -1,3 +1,43 @@
+export const initialState = {
+    basic: {
+        player_name: "",
+        country: "",
+        title: "",
+        player_type: "All Rounder",
+        profile_image_url: "",
+    },
+
+    profile: {
+        date_of_birth: "",
+        age: "",
+        height_cm: "",
+        batting_style: "",
+        bowling_style: "",
+        jersey_number: "",
+        role: "",
+        debut_date: "",
+        retirement_date: "",
+        father_name: "",
+        mother_name: "",
+        teams: [],
+        social_media: [],
+        images: []
+    },
+
+    batting: [
+
+    ],
+
+    bowling: [
+
+    ],
+
+    contracts: [
+
+    ],
+};
+
+
 export function reducer(state, action) {
     switch (action.type) {
 
@@ -37,48 +77,14 @@ export function reducer(state, action) {
                 contracts: action.payload
             };
 
+        case "RESET":
+            return initialState;
+
         default:
             return state;
     }
 }
 
-export const initialState = {
-    basic: {
-        player_name: "",
-        country: "",
-        player_type: "All Rounder",
-        profile_image_url: "",
-    },
-
-    profile: {
-        date_of_birth: "",
-        age: "",
-        height_cm: "",
-        batting_style: "",
-        bowling_style: "",
-        jersey_number: "",
-        role: "",
-        debut_date: "",
-        retirement_date: "",
-        father_name: "",
-        mother_name: "",
-        teams: [],
-        social_media: [],
-        images: []
-    },
-
-    batting: [
-
-    ],
-
-    bowling: [
-
-    ],
-
-    contracts: [
-
-    ],
-};
 
 export const battingFields = [
     { key: "format", label: "Format", type: "text" },

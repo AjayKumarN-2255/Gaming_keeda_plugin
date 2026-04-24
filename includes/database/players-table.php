@@ -11,6 +11,7 @@ function igk_create_players_table() {
     $sql_players = "CREATE TABLE {$table_players} (
         id INT AUTO_INCREMENT PRIMARY KEY,
         player_name VARCHAR(255) NOT NULL UNIQUE,
+        title VARCHAR(255),
         country VARCHAR(100),
         player_type ENUM('Batsman', 'Bowler', 'All Rounder') DEFAULT 'All Rounder',
         profile_image_url VARCHAR(500),
