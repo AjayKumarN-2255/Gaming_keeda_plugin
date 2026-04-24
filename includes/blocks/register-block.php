@@ -25,4 +25,4 @@ function up_register_blocks()
         );
     }
 }
-add_action('init', 'up_register_blocks');
+// add_action('init', 'up_register_blocks');

@@ -5,7 +5,7 @@ defined('ABSPATH') || exit;
 $folders = [
     'post-types',
     'database',
-    'blocks',
+    // 'blocks',
     'admin/players',
     'admin/refresh',
     'api/player',

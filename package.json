@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "wp-scripts start",
-    "build": "wp-scripts build"
+    "start": "wp-scripts start src/index.js",
+    "build": "wp-scripts build src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "devDependencies": {
     "@wordpress/scripts": "^32.0.0",
     "autoprefixer": "^10.5.0",
