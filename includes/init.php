@@ -5,7 +5,9 @@ defined('ABSPATH') || exit;
 $folders = [
     'post-types',
     'database',
+    'blocks',
     'admin/players',
+    'admin/refresh',
     'api/player',
     'graphql/player',
 ];

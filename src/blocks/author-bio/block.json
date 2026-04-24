@@ -1,0 +1,46 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "igk/author-bio",
+    "title": "Author Bio",
+    "category": "text",
+    "icon": "admin-users",
+    "description": "Displays author bio information for iGamingKeeda",
+    "keywords": [
+        "author",
+        "bio",
+        "profile"
+    ],
+    "version": "1.0.0",
+    "textdomain": "igk",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./main.css",
+    "style": "file:./main.css",
+    "supports": {
+        "html": false,
+        "show_in_graphql": true
+    },
+    "attributes": {
+        "authorName": {
+            "type": "string",
+            "source": "text",
+            "selector": ".author-name"
+        },
+        "authorRole": {
+            "type": "string",
+            "default": "Author"
+        },
+        "authorDescription": {
+            "type": "string",
+            "source": "html",
+            "selector": ".author-desc"
+        },
+        "authorImage": {
+            "type": "string",
+            "default": ""
+        },
+        "lastUpdated": {
+            "type": "string"
+        }
+    }
+}

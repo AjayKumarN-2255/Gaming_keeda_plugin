@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "igk/faq",
+    "title": "FAQ",
+    "category": "text",
+    "icon": "admin-users",
+    "description": "Displays FAQ information for iGamingKeeda",
+    "keywords": [
+        "faq",
+        "questions",
+        "help"
+    ],
+    "version": "1.0.0",
+    "textdomain": "igk",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./main.css",
+    "style": "file:./main.css",
+    "supports": {
+        "html": false,
+        "show_in_graphql": true
+    },
+    "attributes": {
+        "faqQuestions": {
+            "type": "array",
+            "default": []
+        }
+    }
+}
+      

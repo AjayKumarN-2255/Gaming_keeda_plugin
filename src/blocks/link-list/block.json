@@ -1,0 +1,29 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "igk/link-list",
+    "title": "Link List",
+    "category": "text",
+    "icon": "admin-users",
+    "description": "Displays a list of links for iGamingKeeda",
+    "keywords": [
+        "link",
+        "list",
+        "navigation"
+    ],
+    "version": "1.0.0",
+    "textdomain": "igk",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./main.css",
+    "style": "file:./main.css",
+    "supports": {
+        "html": false,
+        "show_in_graphql": true
+    },
+    "attributes": {
+        "links": {
+            "type": "array",
+            "default": []
+        }
+    }
+}
