@@ -1,0 +1,86 @@
+/* Container styling */
+.igk-link-list-editor {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 600px;
+}
+
+/* Header */
+.igk-link-header {
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.igk-link-header input {
+    font-weight: bold !important;
+    font-size: 18px !important;
+    border: none !important;
+    background: transparent !important;
+    color: #333 !important;
+}
+
+/* Row layout */
+.igk-link-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.2s;
+    gap: 10px;
+}
+
+.igk-link-row:hover {
+    background: #fafafa;
+}
+
+/* Inputs in same row */
+.igk-row-inputs {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    /* ✅ changed from column to row */
+    gap: 10px;
+}
+
+/* Make both inputs equal width */
+.igk-row-inputs>div {
+    flex: 1;
+}
+
+/* Input styling */
+.igk-row-inputs input {
+    border: 1px solid #e5e5e5 !important;
+    padding: 6px 8px !important;
+    font-size: 14px !important;
+    border-radius: 4px;
+    height: auto !important;
+}
+
+.igk-row-inputs input:focus {
+    border-color: #2271b1 !important;
+    background: #fff !important;
+    outline: none;
+}
+
+/* Right actions */
+.igk-row-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Remove icon */
+.igk-row-actions .dashicon {
+    color: #999;
+}
+
+/* Add button */
+.igk-add-btn {
+    margin: 15px !important;
+    width: calc(100% - 30px);
+    justify-content: center;
+}

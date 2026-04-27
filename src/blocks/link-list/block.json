@@ -21,9 +21,18 @@
         "show_in_graphql": true
     },
     "attributes": {
+        "title": {
+            "type": "string",
+            "default": "Discover more"
+        },
         "links": {
             "type": "array",
-            "default": []
+            "default": [
+                {
+                    "label": "",
+                    "url": ""
+                }
+            ]
         }
     }
 }
