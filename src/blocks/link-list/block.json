@@ -14,8 +14,8 @@
     "version": "1.0.0",
     "textdomain": "igk",
     "editorScript": "file:./index.js",
-    "editorStyle": "file:./main.css",
-    "style": "file:./main.css",
+    "editorStyle": "file:./index.css",
+    "style": "file:./index.css",
     "supports": {
         "html": false,
         "show_in_graphql": true

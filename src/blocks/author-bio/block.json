@@ -14,32 +14,30 @@
     "version": "1.0.0",
     "textdomain": "igk",
     "editorScript": "file:./index.js",
-    "editorStyle": "file:./main.css",
-    "style": "file:./main.css",
+    "editorStyle": "file:./index.css",
+    "style": "file:./index.css",
     "supports": {
         "html": false,
         "show_in_graphql": true
     },
     "attributes": {
-        "authorName": {
+        "name": {
             "type": "string",
-            "source": "text",
-            "selector": ".author-name"
+            "default": "John Doe"
         },
-        "authorRole": {
+        "role": {
             "type": "string",
             "default": "Author"
         },
-        "authorDescription": {
-            "type": "string",
-            "source": "html",
-            "selector": ".author-desc"
-        },
-        "authorImage": {
+        "desc": {
             "type": "string",
             "default": ""
         },
-        "lastUpdated": {
+        "imgURL": {
+            "type": "string",
+            "default": ""
+        },
+        "updated": {
             "type": "string"
         }
     }

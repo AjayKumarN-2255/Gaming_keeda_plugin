@@ -32,14 +32,14 @@ function igk_enqueue_admin_app($hook)
     }
     wp_enqueue_style(
         'igk-admin-style',
-        plugin_dir_url(__FILE__) . 'build/index.css',
+        plugin_dir_url(__FILE__) . 'build/admin/admin.css',
         [],
         '1.0.0'
     );
 
     wp_enqueue_script(
         'igk-admin-app',
-        plugin_dir_url(__FILE__) . 'build/index.js',
+        plugin_dir_url(__FILE__) . 'build/admin/admin.js',
         ['wp-element'],
         '1.0.0',
         true

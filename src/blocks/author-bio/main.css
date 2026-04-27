@@ -1,0 +1,73 @@
+/* Container (Gutenberg block root) */
+.wp-block-igk-author-bio.igk-bio-card {
+    background: #17171d !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    max-width: 800px;
+    margin: 20px;
+}
+
+/* Layout */
+.igk-bio-card .author-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Image */
+.igk-bio-card .author-image-wrapper img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #333;
+}
+
+/* Editor RichText fix */
+.igk-bio-card [contenteditable] {
+    outline: none;
+}
+
+/* Name */
+.igk-bio-card .author-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: block;
+    color: #ffffff !important;
+}
+
+/* Role */
+.igk-bio-card .author-role {
+    font-size: 0.9rem;
+    color: #999 !important;
+    display: block;
+    margin-top: 2px;
+}
+
+/* Bio */
+.igk-bio-card .author-bio p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc !important;
+    margin: 15px 0;
+}
+
+/* Footer */
+.igk-bio-card .author-footer {
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #888 !important;
+    font-size: 0.85rem;
+}
+
+/* Updated date */
+.igk-bio-card .updated-date {
+    color: #aaa;
+}

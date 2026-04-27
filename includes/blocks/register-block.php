@@ -2,27 +2,15 @@
 
 function up_register_blocks()
 {
-    $blocks = [
-        ['name' => 'author-bio'],
-        ['name' => 'faq'],
-        ['name' => 'link-list'],
-        // [
-        //     'name' => 'search-form',
-        //     'options' => ['render_callback' => 'up_search_form_render_cb']
-        // ]
-    ];
+    $blocks_path = IGK_PATH . 'build/blocks/';
 
-    foreach ($blocks as $block) {
+    foreach (glob($blocks_path . '*/block.json') as $block_json) {
 
-        $args = [];
-        if (isset($block['options'])) {
-            $args = $block['options'];
-        }
+        $block_dir = dirname($block_json);
 
-        register_block_type(
-            IGK_PATH . 'build/blocks/' . $block['name'],
-            $args
-        );
+        register_block_type($block_dir);
     }
+    error_log('BLOCK PATH: ' . $blocks_path);
+    error_log(print_r(glob($blocks_path . '*/block.json'), true));
 }
-// add_action('init', 'up_register_blocks');
+add_action('init', 'up_register_blocks');
