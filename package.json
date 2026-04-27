@@ -8,8 +8,10 @@
     "build:admin": "wp-scripts build --config webpack.admin.js",
     "start:blocks": "wp-scripts start",
     "build:blocks": "wp-scripts build",
-    "start": "npm-run-all --parallel start:*",
-    "build": "npm run build:blocks && npm run build:admin"
+    "build": "npm run build:blocks && npm run build:admin",
+    "clean": "rm -rf build *.zip node_modules/.cache",
+    "prezip": "npm run clean && npm run build",
+    "zip": "zip -r igk-plugin.zip . -x 'node_modules/*' 'src/*' '.git/*' '*.zip' 'webpack*.js' 'tailwind.config.js' 'postcss.config.js' 'babel.config.js' '.env*' '*.log' 'package-lock.json' 'package.json' 'tsconfig.json'"
   },
   "keywords": [],
   "author": "",
